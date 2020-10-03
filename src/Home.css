@@ -1,26 +1,62 @@
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: 600px;
+.welcome{
+    width: 80vw;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    padding: 20px;
+}
+.kariimg{
+    font-size: 5em;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
-.card{
-    background: #a1d2ff;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    font-size: 1em;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 20px;
+
+.news{
+    width: 80vw;
+    min-height: 200px;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
 }
-.card:nth-child(4n+1),
-.card:nth-child(4n){
-    background: #b3ecc0;
+.news-article{
+    margin: 5px 20px;
+    padding: 10px 10px;
+    border-top: 1px dashed #baabbb;
+}
+.news-article:last-child{
+    border-bottom: 1px dashed #baabbb;
+}
+.article-date{
+    color: #7c7e7b;
+}
+
+.content-title{
+    border-left: 6px solid #000000;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.contents{
+    width: 80vw;
+    min-height: 600px;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
+}
+.content-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
 }

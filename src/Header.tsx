@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import TwitterIcon from '@material-ui/icons/Twitter';
+import IconButton from '@material-ui/core/IconButton';
 
 interface Props{
 	name?:string;
@@ -11,14 +13,14 @@ function Header(props:Props) {
 	const [pos2,setpos2]=useState(window.pageYOffset);
 	const onScroll=(()=>{
 		if(isOpen)return;
-		if(!isHidden&&window.pageYOffset-pos1>=60){
+		if(!isHidden&&window.pageYOffset-pos1>=100&&window.pageYOffset>=400){
 			setisHidden(true);
 			setpos1(window.pageYOffset);
 			setpos2(window.pageYOffset);
 		}else if(!isHidden){
 			setpos1(Math.min(pos1,window.pageYOffset));
 		}
-		if(isHidden&&pos2-window.pageYOffset>=60){
+		if(isHidden&&pos2-window.pageYOffset>=100){
 			setisHidden(false);
 			setpos1(window.pageYOffset);
 			setpos2(window.pageYOffset);
@@ -40,12 +42,16 @@ function Header(props:Props) {
 			</div>
 			<nav className={"globalMenuSp" + " " + (isOpen ? "active" : "inactive")}>
 				<ul>
-					<li><a href="/Home">Home</a></li>
-					<li><a href="/Contact">Contact</a></li>
-					<li><a href="/uuu">Not Found</a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/Algorithm">アルゴリズム班</a></li>
+					<li><a href="/CG">CG班</a></li>
+					<li><a href="/Security">セキュリティ班</a></li>
+					<li><a href="/Paper">部誌</a></li>
+					<li><a href="/Lecture">講演</a></li>
 				</ul>
 			</nav>
-			<div className="title"><span>{props.name}</span></div>
+			<div className="title"><span>{props.name}</span>
+			</div>
 		</header>
 	);
 }

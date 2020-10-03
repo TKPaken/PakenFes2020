@@ -4,7 +4,7 @@
     transform: translateY(40vh);
     -webkit-box-reflect: below -12px linear-gradient(
         transparent,rgba(0,0,0,0.2));
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -16,13 +16,7 @@
     font-size: min(10vw,5em);
     animation: animate 1.5s ease-in-out;
     animation-delay: calc(0.07s*var(--i));
-
-    
-    background-image: -webkit-linear-gradient(top, #30cfd0 0%, #565ed1 100%);
-    background-image: linear-gradient(to bottom, #30cfd0 0%, #565ed1 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000000;
 }
 @keyframes animate{
     0%{

@@ -3,7 +3,9 @@ import './Footer.css'
 
 function Footer(){
     return (
-        <span></span>
+        <footer>
+            
+        </footer>
     );
 }
 export default Footer;
