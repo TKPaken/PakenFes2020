@@ -87,9 +87,10 @@ nav.globalMenuSp {
     left : 0;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 80vw;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 800px;
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
