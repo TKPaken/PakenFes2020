@@ -28,12 +28,18 @@ function Header(props:Props) {
 			setpos2(Math.max(pos2,window.pageYOffset));
 		}
 	})
+	const onKeyDown=(()=>{if(isOpen)setisOpen(false)});
 	useEffect(()=>{
 		document.addEventListener("scroll", onScroll);
-    	return (): void => document.removeEventListener("scroll", onScroll);
+		document.addEventListener("click",onKeyDown);
+    	return (): void => {
+			document.removeEventListener("scroll", onScroll);
+			document.removeEventListener("click",onKeyDown);
+		}
 	});
 	return (
 		<header className={(isHidden?"hidden":"tapu")}>
+			<div className={"hideLayer "+(isOpen?"active":"inactive")} />
 			<div className={"humburger " + (isOpen ? "active" : "inactive")}
 				onClick={() => setisOpen(!isOpen)}>
 				<span></span>
@@ -41,6 +47,8 @@ function Header(props:Props) {
 				<span></span>
 			</div>
 			<nav className={"globalMenuSp" + " " + (isOpen ? "active" : "inactive")}>
+				<div className="decotitle">Paken.flush();</div>
+				<div className="decosubtitle">Paken Fes 2020</div>
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/Algorithm">アルゴリズム班</a></li>

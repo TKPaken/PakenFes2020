@@ -1,3 +1,8 @@
+.home-content{
+    padding-bottom: 150px;
+    z-index: 500;
+    overflow: hidden;
+}
 .welcome{
     width: 80vw;
     height: 300px;

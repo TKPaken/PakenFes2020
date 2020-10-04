@@ -29,9 +29,9 @@ function Home() {
     return (
         <div>
             <Header name="Home" />
-            <div>
+            <div className="home-content">
                 <Paper elevation={2} className="welcome">
-                    <div className="kariimg">Top Image</div>
+                    <div className="kariimg">Image</div>
                 </Paper>
                 <Paper elevation={1} className="news">
                     <div className="content-title">News</div>

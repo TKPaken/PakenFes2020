@@ -8,7 +8,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    z-index: -1;
+    z-index: 0;
 }
 .wavy span{
     position: relative;
