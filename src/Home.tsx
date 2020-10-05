@@ -31,7 +31,7 @@ function Home() {
             <Header name="Home" />
             <div className="home-content">
                 <Paper elevation={2} className="welcome">
-                    <div className="kariimg">Image</div>
+                    <img src="/header.png" className="headerimage"/>
                 </Paper>
                 <Paper elevation={1} className="news">
                     <div className="content-title">News</div>
