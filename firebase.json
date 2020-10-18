@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "build",
+    "site": "paken2020",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +9,8 @@
     ],
     "rewrites": [
       {
-        "source": "**"
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }

@@ -9,9 +9,10 @@ function NotFound() {
 		<div>
 			<Header />
 			<div className="wavy">
-				<span style={{ "--i": 1 } as React.CSSProperties}>4</span>
-				<span style={{ "--i": 2 } as React.CSSProperties}>0</span>
-				<span style={{ "--i": 3 } as React.CSSProperties}>4</span>
+				<span style={{ "--i": 1 } as React.CSSProperties}>P</span>
+				<span style={{ "--i": 2 } as React.CSSProperties}>a</span>
+				<span style={{ "--i": 3 } as React.CSSProperties}>g</span>
+				<span style={{ "--i": 3 } as React.CSSProperties}>e</span>
 				<span style={{ "--i": 4 } as React.CSSProperties}>&nbsp;</span>
 				<span style={{ "--i": 5 } as React.CSSProperties}>N</span>
 				<span style={{ "--i": 6 } as React.CSSProperties}>o</span>

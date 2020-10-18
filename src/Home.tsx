@@ -15,14 +15,24 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-        width: 400,
-        margin : 10,
+        width: 'calc((100vw - 350px) * 0.3)',
+        margin: '15px 15px',
+        height: 'auto',
+        ['@media (max-width:1024px)']: {
+            width: '40vw',
+            margin: '10px 10px',
+        },
+        ['@media (max-width:550px)']: {
+            width: '90vw',
+            margin: '10px 0px',
+        }
     },
     media: {
-      height: 200,
+        height: '20vw',
+        minHeight: 150,
+        maxHeight: 300,
     },
-  });
-  
+});
 
 function Home() {
     const classes = useStyles();
@@ -30,10 +40,10 @@ function Home() {
         <div>
             <Header name="Home" />
             <div className="home-content">
-                <Paper elevation={2} className="welcome">
-                    <img src="/header.png" className="headerimage"/>
-                </Paper>
-                <Paper elevation={1} className="news">
+                <div className="welcome">
+                    <img src="/assets/header.jpg" className="headerimage"/>
+                </div>
+                <Paper elevation={1} className="content-paper">
                     <div className="content-title">News</div>
                     <div className="news-article">
                         <div className="article-date">2020/10/03</div>
@@ -47,21 +57,23 @@ function Home() {
                             デコのロゴを作成しました。
                         </div>
                     </div>
+                </Paper>
+                <Paper elevation={1} className="content-paper">
+                    <div className="content-title">Schedule</div>
                     <div className="news-article">
-                        <div className="article-date">2020/10/15</div>
+                        <div className="article-date">2020/10/20</div>
                         <div className="article-body">
-                            Paken CTFのPracticeを開始しました。
+                            Paken CTF #1 Practiceを開始予定
                         </div>
                     </div>
                 </Paper>
-                <Paper elevation={1} className="contents">
-                    <div className="content-title">Contents</div>
+                <div className="contents">
                     <div className="content-articles">
                         <Card className={classes.root} onClick={()=>{document.location.href="/Algorithm"}}>
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/sample.jpg"
+                                    image="/assets/sample.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -77,7 +89,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/3859111_s.jpg"
+                                    image="/assets/3859111_s.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -93,7 +105,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/security-4700815_640.jpg"
+                                    image="/assets/security-4700815_640.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -109,7 +121,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/business_karoushi.png"
+                                    image="/assets/business_karoushi.png"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -125,7 +137,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/presentation_kaigi_schoolboy.png"
+                                    image="/assets/presentation_kaigi_schoolboy.png"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -138,7 +150,7 @@ function Home() {
                             </CardActionArea>
                         </Card>
                     </div>
-                </Paper>
+                </div>
             </div>
             <Footer />
         </div>
