@@ -62,7 +62,7 @@ function Header(props: Props) {
 				<div className="decosubtitle">Paken Fes 2020</div>
 				<ul>
 					{listItems}
-					<li><a href="https://twitter.com/tk_paken" target="_blank">Twitter <img src="assets/link.svg" className="ext-link" /></a></li>
+					<li><a href="https://twitter.com/tk_paken" target="_blank">Twitter <img src="assets/img/link.svg" className="ext-link" /></a></li>
 				</ul>
 			</nav>
 			<div className="title"><span>{props.name}</span>

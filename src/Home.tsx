@@ -41,7 +41,7 @@ function Home() {
             <Header name="Home" />
             <div className="home-content">
                 <div className="welcome">
-                    <img src="/assets/header.jpg" className="headerimage"/>
+                    <img src="/assets/img/header.jpg" className="headerimage"/>
                 </div>
                 <Paper elevation={1} className="content-paper">
                     <div className="content-title">News</div>
@@ -73,7 +73,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/assets/sample.jpg"
+                                    image="/assets/img/sample.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -89,7 +89,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/assets/3859111_s.jpg"
+                                    image="/assets/img/3859111_s.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -105,7 +105,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/assets/security-4700815_640.jpg"
+                                    image="/assets/img/security-4700815_640.jpg"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -121,7 +121,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/assets/business_karoushi.png"
+                                    image="/assets/img/business_karoushi.png"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -137,7 +137,7 @@ function Home() {
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
-                                    image="/assets/presentation_kaigi_schoolboy.png"
+                                    image="/assets/img/presentation_kaigi_schoolboy.png"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
