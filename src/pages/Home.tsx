@@ -144,7 +144,7 @@ function Home() {
                                         講演
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        部員の講演の紹介&実況ページです。
+                                        部員の講演の紹介&amp;実況ページです。
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
