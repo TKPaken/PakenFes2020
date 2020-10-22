@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Home from './pages/Home'
+import Paper from './pages/Paper'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/Paper' component={Paper} />
           <Route component={NotFound} />
         </Switch>
       </Router>
