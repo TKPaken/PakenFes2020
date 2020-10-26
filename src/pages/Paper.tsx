@@ -7,6 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -38,13 +39,15 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
     getScreenStyle(): React.CSSProperties {
         if (this.state.mobile) {
             return {
-                marginTop: "80px"
+                marginTop: "80px",
+                paddingBottom: "150px"
             };
         }
         else {
             return {
                 marginTop: "80px",
-                marginLeft: "300px"
+                marginLeft: "300px",
+                paddingBottom: "150px"
             };
         }
     }
@@ -54,6 +57,14 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
             margin: "20px",
             padding : "30px"
         };
+    }
+
+    getContentStyle(): React.CSSProperties {
+        return {
+            margin: "0px 20px",
+            padding: "20px",
+            borderLeft: "6px solid #008000"
+        }
     }
 
     getButtonStyle(): React.CSSProperties {
@@ -73,7 +84,9 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
                 <Header name="部誌" />
                 <div style={this.getScreenStyle()}>
                     <Card style={this.getTitleStyle()}>
-                        部誌を配布しているページです
+                        今年も、部員がまごころ込めて書いた部誌「電脳2020」を配布します。<br />
+                        以下のボタンからダウンロードできます。<br />
+                        当然無料です。ぼったくりではないです。
                     </Card>
 
                     <Card style={this.getTitleStyle()}>
@@ -82,6 +95,73 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
                                 部誌をGET
                             </Button>
                         </div>
+                    </Card>
+
+                    <Card style={this.getTitleStyle()}>
+                        <h2>内容</h2>
+
+                        <Grid container spacing={3}>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    MonopolyをAIで解析する (70th capra314cabra)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    先生にやってほしい公平な指名方法 (71st nuhunune)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    組み合わせゲーム理論と群論 (71st oliverx3)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    競プロ用語をなるべく分かりやすくまとめてみた (74th Abebenn)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    DFSとUnionFind (74th cpcznksutbeoa)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    暗号理論入門 (71st kenkenken2004)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    01-BFSの問題をBFSで解いてみる (74th Cyanmond)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    クエリ問題は一つの世界です。 (70th Thistle)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    このchminセグ木に区間和クエリを！ (72nd define)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    動的計画法を広めたい (71st penguinman)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    ソートアルゴリズムとは？役に立つの？調べてみました！！ (73rd aspi)
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Card style={this.getContentStyle()}>
+                                    フローアルゴリズム入門 (72nd kaage)
+                                </Card>
+                            </Grid>
+                        </Grid>
                     </Card>
                 </div>
                 <Footer />
