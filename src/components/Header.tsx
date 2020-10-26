@@ -44,7 +44,7 @@ function Header(props: Props) {
 			window.removeEventListener("resize", onResize);
 		}
 	});
-	const urllist=[['Home','/'],['アルゴリズム班','/Algorithm'],['CG班','/CG'],['セキュリティ班','/Security'],['部誌','/Paper'],['講演','/Lecture']];
+	const urllist=[['Home','/'],['ゲーム','/game'],['CG','/CG'],['講演','/Lecture'],['部誌','/paper']];
 	const listItems = urllist.map((name) =>
   		<li><a href={name[1]} className={name[0]==props.name?"now":""}>{name[0]}</a></li>
 	);
@@ -62,6 +62,7 @@ function Header(props: Props) {
 				<div className="decosubtitle">Paken Fes 2020</div>
 				<ul>
 					{listItems}
+					<li><a href="https://pakenctf.tk" target="_blank">Paken CTF <img src="assets/img/link.svg" className="ext-link" /></a></li>
 					<li><a href="https://twitter.com/tk_paken" target="_blank">Twitter <img src="assets/img/link.svg" className="ext-link" /></a></li>
 				</ul>
 			</nav>

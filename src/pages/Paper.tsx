@@ -36,6 +36,21 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
         });
     }
 
+    paperContents: string[] = [
+        "MonopolyをAIで解析する (70th capra314cabra)",
+        "先生にやってほしい公平な指名方法 (71st nuhunune)",
+        "組み合わせゲーム理論と群論 (71st oliverx3)",
+        "DFSとUnionFind (74th cpcznksutbeoa)",
+        //"競プロ用語をなるべく分かりやすくまとめてみた (74th Abebenn)",
+        "暗号理論入門 (71st kenkenken2004)",
+        "01-BFSの問題をBFSで解いてみる (74th Cyanmond)",
+        "クエリ問題は一つの世界です。 (70th Thistle)",
+        "このchminセグ木に区間和クエリを！ (72nd define)",
+        "動的計画法を広めたい (71st penguinman)",
+        "ソートアルゴリズムとは？役に立つの？調べてみました！！ (73rd aspi)",
+        "フローアルゴリズム入門 (72nd kaage)"
+    ];
+
     getScreenStyle(): React.CSSProperties {
         if (this.state.mobile) {
             return {
@@ -59,11 +74,11 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
         };
     }
 
-    getContentStyle(): React.CSSProperties {
+    getContentStyle(color: string): React.CSSProperties {
         return {
             margin: "0px 20px",
             padding: "20px",
-            borderLeft: "6px solid #008000"
+            borderLeft: `6px solid ${color}`
         }
     }
 
@@ -72,27 +87,29 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
             margin: "5px",
             padding: "20px",
             fontSize: "20px",
-            width: "230px",
+            width: "250px",
             color: "white",
             background: "linear-gradient(#8080e0, #a0a0d0)"
         };
     }
 
     render() {
+        let isColorBlue = false;
+
         return (
             <div>
                 <Header name="部誌" />
                 <div style={this.getScreenStyle()}>
                     <Card style={this.getTitleStyle()}>
                         今年も、部員がまごころ込めて書いた部誌「電脳2020」を配布します。<br />
-                        以下のボタンからダウンロードできます。<br />
-                        当然無料です。ぼったくりではないです。
+                        部員の持っている技能を是非、ご堪能下さい!<br />
+                        以下のボタンからダウンロードできます。
                     </Card>
 
                     <Card style={this.getTitleStyle()}>
                         <div style={{ textAlign: "center" }}>
                             <Button style={this.getButtonStyle()} onClick={() => { window.open("", "_blank"); }}>
-                                部誌をGET
+                                部誌をGET!
                             </Button>
                         </div>
                     </Card>
@@ -101,66 +118,18 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
                         <h2>内容</h2>
 
                         <Grid container spacing={3}>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    MonopolyをAIで解析する (70th capra314cabra)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    先生にやってほしい公平な指名方法 (71st nuhunune)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    組み合わせゲーム理論と群論 (71st oliverx3)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    競プロ用語をなるべく分かりやすくまとめてみた (74th Abebenn)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    DFSとUnionFind (74th cpcznksutbeoa)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    暗号理論入門 (71st kenkenken2004)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    01-BFSの問題をBFSで解いてみる (74th Cyanmond)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    クエリ問題は一つの世界です。 (70th Thistle)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    このchminセグ木に区間和クエリを！ (72nd define)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    動的計画法を広めたい (71st penguinman)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    ソートアルゴリズムとは？役に立つの？調べてみました！！ (73rd aspi)
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Card style={this.getContentStyle()}>
-                                    フローアルゴリズム入門 (72nd kaage)
-                                </Card>
-                            </Grid>
+                            {
+                                this.paperContents.map((content, index) => {
+                                    isColorBlue = !isColorBlue;
+                                    return (
+                                        <Grid item xs={12}>
+                                            <Card style={this.getContentStyle(isColorBlue ? "#52f22e" : "#2eaff0")}>
+                                                {content}
+                                            </Card>
+                                        </Grid>
+                                    );
+                                })
+                            }
                         </Grid>
                     </Card>
                 </div>

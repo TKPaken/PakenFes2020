@@ -43,7 +43,90 @@ function Home() {
                 <div className="welcome">
                     <img src="/assets/img/header.jpg" className="headerimage"/>
                 </div>
-                <Paper elevation={1} className="content-paper">
+                <div className="contents">
+                    <div className="content-articles">
+                        <Card className={classes.root} onClick={()=>{document.location.href="https://pakenctf.tk"}}>
+                            <CardActionArea>
+                                <CardMedia
+                                className={classes.media}
+                                    image="/assets/img/security-4700815_640.jpg"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Paken CTF
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        班員独自のCapture The Flag、Paken CTF #1を開催しています。
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                        <Card className={classes.root} onClick={()=>{document.location.href="/game"}}>
+                            <CardActionArea>
+                                <CardMedia
+                                className={classes.media}
+                                    image="/assets/img/sample.jpg"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        ゲーム
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        班員の作成したゲームを配布しているページです。
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                        <Card className={classes.root} onClick={()=>{document.location.href="/CG"}}>
+                            <CardActionArea>
+                                <CardMedia
+                                className={classes.media}
+                                    image="/assets/img/3859111_s.jpg"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        CG
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        班員の作成したCG作品集です。
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                        <Card className={classes.root} onClick={()=>{document.location.href="/Lecture"}}>
+                            <CardActionArea>
+                                <CardMedia
+                                className={classes.media}
+                                    image="/assets/img/presentation_kaigi_schoolboy.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        講演
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        部員の講演の紹介&amp;実況ページです。
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                        <Card className={classes.root} onClick={()=>{document.location.href="/paper"}}>
+                            <CardActionArea>
+                                <CardMedia
+                                className={classes.media}
+                                    image="/assets/img/business_karoushi.png"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        部誌
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        部員の技能を集めた「電脳2020」を配布しています。
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </div>
+                    <Paper elevation={1} className="content-paper">
                     <div className="content-title">News</div>
                     <div className="news-article">
                         <div className="article-date">2020/10/03</div>
@@ -67,89 +150,6 @@ function Home() {
                         </div>
                     </div>
                 </Paper>
-                <div className="contents">
-                    <div className="content-articles">
-                        <Card className={classes.root} onClick={()=>{document.location.href="/Algorithm"}}>
-                            <CardActionArea>
-                                <CardMedia
-                                className={classes.media}
-                                    image="/assets/img/sample.jpg"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        アルゴリズム班
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        班員の作成した「アルゴリズムパズル」を集めました。
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                        <Card className={classes.root} onClick={()=>{document.location.href="/CG"}}>
-                            <CardActionArea>
-                                <CardMedia
-                                className={classes.media}
-                                    image="/assets/img/3859111_s.jpg"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        CG班
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        班員の作成したCG作品集です。CGソフトの使い方も載っています。
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                        <Card className={classes.root} onClick={()=>{document.location.href="/Security"}}>
-                            <CardActionArea>
-                                <CardMedia
-                                className={classes.media}
-                                    image="/assets/img/security-4700815_640.jpg"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        セキュリティ班
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        班員独自のCapture The Flag、Paken CTF #1を開催しています。
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                        <Card className={classes.root} onClick={()=>{document.location.href="/Paper"}}>
-                            <CardActionArea>
-                                <CardMedia
-                                className={classes.media}
-                                    image="/assets/img/business_karoushi.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        部誌
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        部員の技能を集めた「電脳2020」を配布しています。
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                        <Card className={classes.root} onClick={()=>{document.location.href="/Lecture"}}>
-                            <CardActionArea>
-                                <CardMedia
-                                className={classes.media}
-                                    image="/assets/img/presentation_kaigi_schoolboy.png"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        講演
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        部員の講演の紹介&amp;実況ページです。
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </div>
                 </div>
             </div>
             <Footer />

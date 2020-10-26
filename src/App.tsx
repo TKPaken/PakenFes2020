@@ -35,7 +35,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/Paper' component={Paper} />
+          <Route exact path='/paper' component={Paper} />
           <Route component={NotFound} />
         </Switch>
       </Router>
