@@ -1,10 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
-import Home from './pages/Home'
-import Paper from './pages/Paper'
-import Game from './pages/Game'
-import NotFound from './pages/NotFound'
+import Home from './pages/Home';
+import Paper from './pages/Paper';
+import Game from './pages/Game';
+import Lecture from './pages/Lecture';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [isLoaded,setisLoaded]=useState(false);
@@ -38,6 +39,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/paper' component={Paper} />
           <Route exact path='/game' component={Game} />
+          <Route exact path='/lecture' component={Lecture} />
           <Route component={NotFound} />
         </Switch>
       </Router>
