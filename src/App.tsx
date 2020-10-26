@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Paper from './pages/Paper';
 import Game from './pages/Game';
 import Lecture from './pages/Lecture';
+import CG from './pages/CG';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route exact path='/paper' component={Paper} />
           <Route exact path='/game' component={Game} />
           <Route exact path='/lecture' component={Lecture} />
+          <Route exact path='/CG' component={CG} />
           <Route component={NotFound} />
         </Switch>
       </Router>
