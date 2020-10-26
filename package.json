@@ -1,8 +1,8 @@
 {
-  "name": "pakenfes-hp",
+  "name": "pakenfes2020",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pakenfes-prototype.web.app/",
+  "homepage": "https://paken2020.web.app/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",

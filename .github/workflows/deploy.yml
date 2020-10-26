@@ -1,8 +1,8 @@
 name: Deploy to server
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
@@ -25,6 +25,7 @@ jobs:
           npm install
       - name: Deploy to server
         run: |
+          npm run predeploy
           firebase deploy --token $FIREBASE_TOKEN
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
