@@ -44,7 +44,7 @@ function Header(props: Props) {
 			window.removeEventListener("resize", onResize);
 		}
 	});
-	const urllist=[['Home','/'],['ゲーム','/game'],['CG','/CG'],['講演','/Lecture'],['部誌','/paper']];
+	const urllist=[['Home','/'],['ゲーム','/game'],['CG','/CG'],['講演','/lecture'],['部誌','/paper']];
 	const listItems = urllist.map((name) =>
   		<li><a href={name[1]} className={name[0]==props.name?"now":""}>{name[0]}</a></li>
 	);

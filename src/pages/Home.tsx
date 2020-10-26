@@ -93,7 +93,7 @@ function Home() {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                        <Card className={classes.root} onClick={()=>{document.location.href="/Lecture"}}>
+                        <Card className={classes.root} onClick={()=>{document.location.href="/lecture"}}>
                             <CardActionArea>
                                 <CardMedia
                                 className={classes.media}
