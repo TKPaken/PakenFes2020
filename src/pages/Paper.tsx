@@ -108,7 +108,7 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
 
                     <Card style={this.getTitleStyle()}>
                         <div style={{ textAlign: "center" }}>
-                            <Button style={this.getButtonStyle()} onClick={() => { window.open("", "_blank"); }}>
+                            <Button style={this.getButtonStyle()} onClick={() => { window.open("/assets/2020_paken_bushi.pdf", "_blank"); }}>
                                 部誌をGET!
                             </Button>
                         </div>
