@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Home from './pages/Home'
 import Paper from './pages/Paper'
+import Game from './pages/Game'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/paper' component={Paper} />
+          <Route exact path='/game' component={Game} />
           <Route component={NotFound} />
         </Switch>
       </Router>
