@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "build",
-    "site": "pakenfes2020",
+    "site": "paken2020",
     "ignore": [
       "firebase.json",
       "**/.*",
