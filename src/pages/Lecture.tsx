@@ -2,8 +2,6 @@ import React from 'react'
 import { RouteComponentProps, withRouter } from 'react-router'
 import './Home.css'
 import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -88,8 +86,6 @@ class LectureComponent extends React.Component<ILectureComponentProps, ILectureC
     }
 
     render() {
-        let isColorBlue = false;
-
         return (
             <div>
                 <Header name="講演" />
@@ -102,8 +98,8 @@ class LectureComponent extends React.Component<ILectureComponentProps, ILectureC
                         <div style={{ textAlign: "center" }}>
                             {
                                 this.state.mobile
-                                ? <iframe src="https://drive.google.com/file/d/1DqqETQkMlQhcFQufh6V9Sd6cb3UGK3zI/preview" width="100%" height="200px"></iframe>
-                                : <iframe src="https://drive.google.com/file/d/1DqqETQkMlQhcFQufh6V9Sd6cb3UGK3zI/preview" width="800px" height="400px"></iframe>
+                                ? <iframe title="quantum computer" src="https://drive.google.com/file/d/1DqqETQkMlQhcFQufh6V9Sd6cb3UGK3zI/preview" width="100%" height="200px"></iframe>
+                                : <iframe title="quantum computer mobile" src="https://drive.google.com/file/d/1DqqETQkMlQhcFQufh6V9Sd6cb3UGK3zI/preview" width="800px" height="400px"></iframe>
                             }
                         </div>
                     </Card>

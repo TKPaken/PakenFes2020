@@ -14,7 +14,7 @@ function App() {
     setisLoaded(true);
   });
   useEffect(()=>{
-    if(document.readyState=="complete"){
+    if(document.readyState==="complete"){
       setisLoaded(true);
     }else {
       window.addEventListener("load",onLoad);
@@ -22,7 +22,7 @@ function App() {
         window.removeEventListener("load",onLoad);
       }
     }
-  });
+  }, []);
   return (
     <div className="App">
       <div className={"loading"+(isLoaded?" inactive":" active")}>

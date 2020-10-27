@@ -14,10 +14,6 @@ interface IGameContentsState {
 }
 
 class GameContents extends React.Component<IGameContentsProps, IGameContentsState> {
-    constructor(props: IGameContentsProps) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
@@ -27,7 +23,7 @@ class GameContents extends React.Component<IGameContentsProps, IGameContentsStat
                         {this.props.children}
                     </div>
                     <div style={{ float: "left", width: "min(400px, 90%)" }}>
-                        <img style={{ margin: "60px 10px 10px 10px", width: "100%", height: "200px" }} src={this.props.picture}></img><br />
+                        <img alt={this.props.title} style={{ margin: "60px 10px 10px 10px", width: "100%", height: "200px" }} src={this.props.picture}></img><br />
                         <Button
                             style={{ margin: "10px", width: "100%", color: "white", backgroundColor: "blue" }}
                             onClick={() => { window.location.href = this.props.downloadUrl }}>

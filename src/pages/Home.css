@@ -1,3 +1,27 @@
+.root {
+    width: calc((100vw - 350px) * 0.3);
+    margin: 15px 15px;
+    height: auto;
+}
+@media (max-width:1024px) {
+    .root {
+        width: 40vw;
+        margin: '10px 10px';
+    }
+}
+@media (max-width:550px) {
+    .root {
+        width: 90vw;
+        margin: 10px 0px;
+    }
+}
+
+.media {
+    height: "20vw";
+    min-height: 150px;
+    max-height: 300px;
+}
+
 .home-content{
     width: 100vw;
     padding-bottom: 150px;

@@ -46,7 +46,7 @@ function Header(props: Props) {
 	});
 	const urllist=[['Home','/'],['ゲーム','/game'],['CG','/CG'],['講演','/lecture'],['部誌','/paper']];
 	const listItems = urllist.map((name) =>
-  		<li><a href={name[1]} className={name[0]==props.name?"now":""}>{name[0]}</a></li>
+  		<li><a href={name[1]} className={name[0]===props.name?"now":""}>{name[0]}</a></li>
 	);
 	return (
 		<header className={(isHidden ? "hidden" : "tapu")}>
@@ -57,13 +57,13 @@ function Header(props: Props) {
 				<span></span>
 				<span></span>
 			</div>
-			<nav className={"globalMenuSp" + " " + (isOpen ? "active" : "inactive")}>
+			<nav className={`globalMenuSp ${(isOpen ? "active" : "inactive")}`}>
 				<div className="decotitle">Paken.flush();</div>
 				<div className="decosubtitle">Paken Fes 2020</div>
 				<ul>
 					{listItems}
-					<li><a href="https://pakenctf.tk" target="_blank">Paken CTF <img src="assets/img/link.svg" className="ext-link" /></a></li>
-					<li><a href="https://twitter.com/tk_paken" target="_blank">Twitter <img src="assets/img/link.svg" className="ext-link" /></a></li>
+					<li><a href="https://pakenctf.tk" target="_blank" rel="noopener noreferrer">Paken CTF <img alt="Paken CTF logo" src="assets/img/link.svg" className="ext-link" /></a></li>
+					<li><a href="https://twitter.com/tk_paken" target="_blank" rel="noopener noreferrer">Twitter <img alt="Paken twitter" src="assets/img/link.svg" className="ext-link" /></a></li>
 				</ul>
 			</nav>
 			<div className="title"><span>{props.name}</span>
