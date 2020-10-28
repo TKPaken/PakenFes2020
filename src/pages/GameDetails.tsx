@@ -75,6 +75,7 @@ class GameDetailsComponent extends React.Component<IGameDetailsComponentProps, I
                         {this.state.info.description}
                         <h3>他の部員からの感想</h3>
                         {this.state.info.review}
+                        <iframe title={`movie_${this.state.info.id}`} style={{ width: "min(100%, 560px)", height: "270px", margin: "10px" }} src={this.state.info.movie} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                     </div>
                 </Card>
                 </div>
