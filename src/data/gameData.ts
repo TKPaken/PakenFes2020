@@ -48,7 +48,7 @@ export let gameData: GameInfo[] = [
     {
         id: "doppel",
         title: "Doppelganger (Thistle)",
-        picture: "/assets/img/games/doppel.png",
+        picture: "/assets/img/games/doppel.PNG",
         downloadUrl: "https://drive.google.com/drive/folders/1MjeGCI1vlhui63CJJ27cXs0vEdSV70C0?usp=sharing",
         description: "世界に彷徨うドッペルゲンガーに見つからないよう逃げるゲームです。ゴール地点の黄金の良く分からない像に触れることで脱出できます。身体を一切動かさずに移動し、たまにフィギュアスケーターのように回転するドッペルゲンガーの恐怖からあなたは逃げ切れるか？？",
         review: "このゲーム、とてもとても怖かったです。まず、説明のところで薄暗い背景に不気味な感じの文章が書かれていて、これを見ただけで震え上がりました。とてもよく作り込まれているな、と思いました。実際にゲームをプレイしてみると、これがまたすごかったです。ドッペルゲンガーを見てしまわないように、と慎重になるゲーム性が余計に恐怖を煽ります。また、うっかりドッペルゲンガーを見てしまった時の急に現れるゲームオーバーの画面がトラウマになります。このゲームを夜にやったのですが、本当に怖くて泣きそうになっています...",
