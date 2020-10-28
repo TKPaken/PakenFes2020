@@ -57,10 +57,7 @@ class GameComponent extends React.Component<IGameComponentProps, IGameComponentS
                     {
                         gameData.map((info) => {
                             return (
-                                <GameContents
-                                    title={info.title}
-                                    picture={info.picture}
-                                    downloadUrl={info.downloadUrl}>
+                                <GameContents info={info}>
                                     {info.description}
                                 </GameContents>
                             )

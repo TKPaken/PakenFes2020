@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Paper from './pages/Paper';
 import Game from './pages/Game';
+import GameDetails from './pages/GameDetails';
 import Lecture from './pages/Lecture';
 import CG from './pages/CG';
 import NotFound from './pages/NotFound';
@@ -39,6 +40,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/paper' component={Paper} />
+          <Route exact path='/game/:id' component={GameDetails} />
           <Route exact path='/game' component={Game} />
           <Route exact path='/lecture' component={Lecture} />
           <Route exact path='/CG' component={CG} />

@@ -9,7 +9,7 @@ export interface GameInfo {
 
 export let gameData: GameInfo[] = [
     {
-        id: "blow-shooting",
+        id: "blow",
         title: "Blow Shooting (nuhunune)",
         picture: "/assets/img/games/blow-shooting.png",
         downloadUrl: "https://drive.google.com/drive/folders/1cwAsU95wjdlELqJNKq-Z-2Q3cQMl-KcX?usp=sharing",
@@ -17,7 +17,7 @@ export let gameData: GameInfo[] = [
         review: "全体的に良いアプリだったと思う。まず、ゲームの構想として竜巻を起こせるようにするという発想が面白かった。竜巻を出すキャラというと、中ボスが多いと思う(偏見)。これをプレイヤーが動かす人に導入することは中々思いつかないであろうと思う。ただ、この竜巻を使う中でも、難易度3以降は、竜巻で物を吹き上げると、複数個打たなければいけなくなる。このことにより、難易度2と難易度3の間の崖が非常に高くなってしまっている。よって、難易度2で竜巻を利用してかつ、複数個打たなければいけないが簡単な場所を用意した方が良かったのではないかと思う。"
     },
     {
-        id: "infinity-run",
+        id: "infinity",
         title: "infinity run (Californium)",
         picture: "/assets/img/games/infinity-run.png",
         downloadUrl: "https://drive.google.com/drive/folders/1UIBk3xu760yAgUO2fMEY_oApZCsLnjkr?usp=sharing",
@@ -62,10 +62,10 @@ export let gameData: GameInfo[] = [
         picture: "/assets/img/games/convex.JPG",
         downloadUrl: "https://drive.google.com/drive/folders/1ovq0KcJvWVb287ECLxu0yoxQbBcHNl81?usp=sharing",
         description: "凸包を計算するアルゴリズムの一つである「andrew's monotone chain algorithm」のビジュアライザです。andrew's monotone chain algorithmとは点の数をnとすると、凸包をO(n log n)で求めることができるアルゴリズムです。点をx座標でソートした後、上側の凸包を下側の凸包を別々に計算し、併合して凸包を求めます。",
-        review: "andrew's monotone chain algorithmというものを元に作ったアプリらしいですが、とても分かりやすかったです。どんなに適当に点をうってもしっかりとすべての角が180度未満の多角形を作る点で囲ってくれます。(convex hullというらしいです)そういうものだとわかっていても見てて楽しくなります。また、どのような形ならこれをバグらせられるかと考えて点を打ってみるのも楽しいです(w)まあ自分はできませんでしたが。頑張ってバグらせて見ましょう(\^o^/)。またアルゴリズムについての説明がいまいち足りないような気もしましたが、某gglでアンドリューのアルゴリズムと検索すれば出てきます。"
+        review: "andrew's monotone chain algorithmというものを元に作ったアプリらしいですが、とても分かりやすかったです。どんなに適当に点をうってもしっかりとすべての角が180度未満の多角形を作る点で囲ってくれます。(convex hullというらしいです)そういうものだとわかっていても見てて楽しくなります。また、どのような形ならこれをバグらせられるかと考えて点を打ってみるのも楽しいです(w)まあ自分はできませんでしたが。頑張ってバグらせて見ましょう(\\^o^/)。またアルゴリズムについての説明がいまいち足りないような気もしましたが、某gglでアンドリューのアルゴリズムと検索すれば出てきます。"
     },
     {
-        id: "fps",
+        id: "tkfps",
         title: "TK_FPS (primenumberzz)",
         picture: "/assets/img/games/fps.png",
         downloadUrl: "https://drive.google.com/drive/folders/1luyv-6TIlNRPoV54zh_9K6aZwSiC-iUo?usp=sharing",
@@ -81,7 +81,7 @@ export let gameData: GameInfo[] = [
         review: "404 Notfound..."
     },
     {
-        id: "fps-game",
+        id: "fpsgame",
         title: "fps game (児玉)",
         picture: "/assets/img/games/fps-game.PNG",
         downloadUrl: "https://drive.google.com/drive/folders/1r65BvJb-1FyEHJEnUmX1gfvGwp0SMrGa?usp=sharing",
