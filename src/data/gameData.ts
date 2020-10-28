@@ -62,7 +62,7 @@ export let gameData: GameInfo[] = [
         picture: "/assets/img/games/convex.JPG",
         downloadUrl: "https://drive.google.com/drive/folders/1ovq0KcJvWVb287ECLxu0yoxQbBcHNl81?usp=sharing",
         description: "凸包を計算するアルゴリズムの一つである「andrew's monotone chain algorithm」のビジュアライザです。andrew's monotone chain algorithmとは点の数をnとすると、凸包をO(n log n)で求めることができるアルゴリズムです。点をx座標でソートした後、上側の凸包を下側の凸包を別々に計算し、併合して凸包を求めます。",
-        review: "andrew's monotone chain algorithmというものを元に作ったアプリらしいですが、とても分かりやすかったです。どんなに適当に点をうってもしっかりとすべての角が180度未満の多角形を作る点で囲ってくれます。(convex hullというらしいです)そういうものだとわかっていても見てて楽しくなります。また、どのような形ならこれをバグらせられるかと考えて点を打ってみるのも楽しいです(w)まあ自分はできませんでしたが。頑張ってバグらせて見ましょう(\\^o^/)。またアルゴリズムについての説明がいまいち足りないような気もしましたが、某gglでアンドリューのアルゴリズムと検索すれば出てきます。"
+        review: "andrew's monotone chain algorithmというものを元に作ったアプリらしいですが、とても分かりやすかったです。どんなに適当に点をうってもしっかりとすべての角が180度未満の多角形を作る点で囲ってくれます。(convex hullというらしいです)そういうものだとわかっていても見てて楽しくなります。また、どのような形ならこれをバグらせられるかと考えて点を打ってみるのも楽しいです(w)まあ自分はできませんでしたが。頑張ってバグらせて見ましょう。またアルゴリズムについての説明がいまいち足りないような気もしましたが、某gglでアンドリューのアルゴリズムと検索すれば出てきます。"
     },
     {
         id: "tkfps",
