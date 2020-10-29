@@ -31,17 +31,17 @@ class PaperComponent extends React.Component<IPaperComponentProps, IPaperCompone
     }
 
     paperContents: string[] = [
-        "MonopolyをAIで解析する (70th capra314cabra)",
+        "ソートアルゴリズムとは？役に立つの？調べてみました！！ (73rd aspi)",
+        "動的計画法を広めたい (71st penguinman)",
         "先生にやってほしい公平な指名方法 (71st nuhunune)",
-        "組み合わせゲーム理論と群論 (71st oliverx3)",
+        "MonopolyをAIで解析する (70th capra314cabra)",
         "DFSとUnionFind (74th cpcznksutbeoa)",
-        //"競プロ用語をなるべく分かりやすくまとめてみた (74th Abebenn)",
         "暗号理論入門 (71st kenkenken2004)",
         "01-BFSの問題をBFSで解いてみる (74th Cyanmond)",
         "クエリ問題は一つの世界です。 (70th Thistle)",
+        "分割統治とデータ構造 (70th autumn_eel)",
+        "組み合わせゲーム理論と群論 (71st oliverx3)",
         "このchminセグ木に区間和クエリを！ (72nd define)",
-        "動的計画法を広めたい (71st penguinman)",
-        "ソートアルゴリズムとは？役に立つの？調べてみました！！ (73rd aspi)",
         "フローアルゴリズム入門 (72nd kaage)"
     ];
 
